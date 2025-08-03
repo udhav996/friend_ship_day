@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎉 Happy Friendship Day!</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Main App Container -->
+  <div class="container">
+    <!-- Floating Gift Box -->
+    <div class="gift-box" id="giftBox">
+      🎁
+      <p class="gift-text">Tap to Open!</p>
+    </div>
+
+    <!-- Hidden Content After Opening Gift -->
+    <div class="content" id="contentBox">
+        <img src="cartoon_face2.png" alt="Emoji" class="emoji-icon">
+      <h1 class="headline">🎉 Happy Friendship Day! </h1>
+
+      <p>Enter your name and get your surprise 🎊</p>
+      <input type="text" id="friendName" placeholder="Your name here..." />
+      <br />
+      <button id="letsGo">Let's Go! 🚀</button>
+      <p class="wish-display" id="wishDisplay" style="display:none;"></p>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-funkyelement.mp3" loop></audio>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
